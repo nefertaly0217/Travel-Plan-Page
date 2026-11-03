@@ -51,6 +51,34 @@ a{color:inherit;text-decoration:none}a:hover{color:var(--coral)}.wrap{width:min(
 .optional-panel b{font-size:12px;color:#8d693d}
 .optional-panel p{font-size:11px;color:var(--muted);margin:5px 0 0;line-height:1.65}
 
+
+/* Editable trip budget calculator */
+.budget-calc{margin-top:18px;background:#fffdf8;border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 28px rgba(55,65,53,.035)}
+.calc-intro{display:flex;justify-content:space-between;align-items:start;gap:18px;margin-bottom:15px}
+.calc-intro h3{font:21px var(--serif);margin:0 0 5px}
+.calc-intro p{font-size:12px;color:var(--muted);margin:0;max-width:600px}
+.calc-group{margin-top:16px}
+.calc-group h4{font:15px var(--serif);margin:0 0 9px;color:var(--pine)}
+.calc-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:9px}
+.calc-row{display:grid;grid-template-columns:minmax(0,1fr) 145px;gap:10px;align-items:center;padding:10px 12px;background:#f6f3eb;border-radius:10px}
+.calc-row label{font-size:12px;color:var(--ink)}
+.calc-row small{display:block;font-size:10px;color:var(--muted);margin-top:2px}
+.calc-input-wrap{display:flex;align-items:center;gap:5px;justify-content:flex-end}
+.calc-input{width:112px;min-width:0;border:1px solid #d5cebd;border-radius:8px;background:#fffefa;padding:8px 9px;color:var(--ink);font:600 13px var(--sans);text-align:right}
+.calc-input:focus{outline:2px solid #b5c9bc;border-color:var(--pine)}
+.calc-unit{font-size:10px;color:var(--muted)}
+.calc-total{display:flex;align-items:center;justify-content:space-between;gap:15px;border-top:1px solid var(--line);margin-top:17px;padding-top:15px}
+.calc-total span{font-size:12px;color:var(--muted)}
+.calc-total strong{font:26px var(--serif);color:var(--pine)}
+.calc-summary{display:grid;grid-template-columns:repeat(3,1fr);gap:9px;margin-top:12px}
+.calc-summary div{background:var(--pine2);padding:12px;border-radius:11px}
+.calc-summary span{display:block;font-size:10px;color:var(--muted)}
+.calc-summary b{display:block;font:17px var(--serif);margin-top:3px}
+.calc-actions{display:flex;align-items:center;gap:10px;flex-wrap:wrap;margin-top:14px}
+.calc-reset{border:1px solid #c8c0ae;border-radius:22px;padding:8px 14px;background:transparent;color:var(--pine);font:12px var(--sans);cursor:pointer}
+.calc-note{font-size:10px;color:var(--muted);line-height:1.6;margin-top:12px}
+@media(max-width:650px){.calc-grid{grid-template-columns:1fr}.calc-row{grid-template-columns:minmax(0,1fr) 130px}.calc-input{width:100px}.calc-summary{grid-template-columns:1fr}.calc-intro{display:block}}
+
 </style>
 </head>
 <body>
@@ -106,7 +134,7 @@ a{color:inherit;text-decoration:none}a:hover{color:var(--coral)}.wrap{width:min(
 <tr><td>10/4 周一</td><td>上午–晚上</td><td><span class="status-pill must">必选</span>NZONE 12,000英尺跳伞。<br><span class="status-pill option">备选</span>Shotover Jet：仅考虑16:00前班次；Skyline Luge：可考虑17:00左右或之后，按当日营业时间及跳伞结束时间决定。</td><td>市区集合及运营商接送；备选项目另行安排接驳</td><td>皇后镇</td></tr>
 <tr><td>10/5 周二</td><td>08:00–晚上</td><td><span class="status-pill must">必选</span>皇后镇→特卡波；Air Safaris 50分钟大穿越；牧羊人教堂、特卡波湖。<br><span class="status-pill option">备选</span>若抵达后仍有时间，可考虑Tekapo Springs或夜间观星。</td><td>巴士约4–4.25小时；当地接驳</td><td>特卡波</td></tr>
 <tr><td>10/6 周三</td><td>上午–晚上</td><td><span class="status-pill must">必选</span>特卡波→基督城→凯库拉；抵达后入住、海边散步。<br><span class="status-pill option">备选</span>如抵达时仍有日照，可走一段Kaikōura Peninsula Walkway或到Point Kean看海豹，不建议安排完整长步道。</td><td>巴士约6–8小时，含转乘等待</td><td>凯库拉</td></tr>
-<tr><td>10/7 周四</td><td>07:15–晚上</td><td><span class="status-pill must">必选</span>凯库拉观鲸；返回基督城机场，飞奥克兰。<br><span class="status-pill option">备选</span>如抵达奥克兰较早，可在Viaduct Harbour或Britomart附近散步。</td><td>观鲸约3小时15分钟；接驳约2小时40分钟以上；飞行约1.5小时</td><td>奥克兰</td></tr>
+<tr><td>10/7 周四</td><td>07:15–晚上</td><td><span class="status-pill must">必选</span>凯库拉观鲸；之后前往基督城机场，搭乘CHC→AKL航班。建议选择傍晚航班（优先17:00以后）。<br><span class="status-pill option">备选</span>如抵达奥克兰较早，可在Viaduct Harbour或Britomart附近散步。</td><td>观鲸约3小时15分钟；凯库拉至基督城机场需预留约3–3.5小时及交通缓冲；飞行约1.5小时</td><td>奥克兰</td></tr>
 <tr><td>10/8 周五</td><td>06:00–19:00左右</td><td><b>霍比特人村中文团＋Waitomo萤火虫洞</b></td><td>北岛组合跟团，约12小时</td><td>奥克兰</td></tr>
 <tr><td>10/9 周六</td><td>11:00</td><td>奥克兰飞北京</td><td>国际航班</td><td>—</td></tr>
 </tbody></table></div>
@@ -176,29 +204,78 @@ a{color:inherit;text-decoration:none}a:hover{color:var(--coral)}.wrap{width:min(
 <div class="destination-grid">
 <article class="card destination"><div class="city-no">01 / SOUTH ISLAND</div><h3>Queenstown 皇后镇</h3><div class="stayline">10/03—10/05 · 2晚</div><span class="tag">高空冒险</span><ul><li><b>10/03：</b>墨尔本飞抵皇后镇，入住、湖边散步。</li><li><b>10/04：</b>NZONE 12,000英尺双人跳伞；下午自由活动。</li><li><b>备选项目：</b>若跳伞结束较早且体力充足，可加Shotover Jet及Skyline Luge。Shotover Jet现行班次约为10:00–16:00，需至少提前30分钟签到，因此不能按17:00开船安排；Skyline Luge可考虑17:00左右或之后，须以2027年10月当日开放时间为准。</li></ul><div class="dest-price">双人住宿预算<strong>¥2,000–2,600 / 2晚</strong>双人12,000英尺基础跳伞约¥3,500–3,600；如两人均购买影像，另加约¥1,570–1,650。</div><div class="note">跳伞受天气影响；建议预约上午场，购买明确承保高空跳伞的旅行保险。若跳伞因天气延误，优先保留休息时间，不为备选项目赶场。</div><div class="optional-panel"><b>备选体验 · 按时间决定</b><p><b>Shotover Jet：</b>约25分钟水上体验，但需提前签到并预留往返Arthurs Point的交通时间；建议只有在跳伞结束较早、且能订到16:00前班次时才安排。<br><b>Skyline Luge：</b>位于市区缆车山顶，可考虑17:00左右上山，搭配缆车观景；你找到的「Skyline＋Luge 5圈」约¥373/人，双人约¥746；官方现行成人缆车＋5圈套票为NZ$104/人，价格会随预订日期变化。2027年10月时刻尚需临近出行确认。</p><p class="small"><a href="https://shotoverjet.com/experience/before-your-trip/" target="_blank" rel="noreferrer">Shotover Jet班次及签到要求 ↗</a>　<a href="https://queenstown.skyline.co.nz/opening-hours/" target="_blank" rel="noreferrer">Skyline开放时间 ↗</a></p></div><div class="stay-recommendation"><div class="stay-label">推荐住宿区域 · QUEENSTOWN</div><b>首选：Queenstown Town Centre市中心</b><p>建议住在Camp Street、Stanley Street、Shotover Street及湖滨步行范围内，便于参加跳伞接送、旅行团集合、餐饮和晚间散步；无需自驾，整体最省事。建议选择靠近主街、有前台且近期评价稳定的住宿，夜间沿照明良好的道路活动。</p><p><b>性价比备选：</b>Frankton机场及Remarkables Park周边，超市和住宿选择较多，通常比湖边核心区更容易控制预算；但前往市中心集合点需额外乘公交或打车。若选择Frankton，务必先核对NZONE接送范围及备选项目的末班交通。</p><p class="small"><a href="https://www.queenstown.com/plan-your-trip/where-to-stay" target="_blank" rel="noreferrer">皇后镇住宿区域指南 ↗</a></p></div><div class="small" style="margin-top:10px"><a href="https://www.nzoneskydive.co.nz/" target="_blank" rel="noreferrer">NZONE Skydive ↗</a></div></article>
 <article class="card destination"><div class="city-no">02 / SOUTH ISLAND</div><h3>Tekapo 特卡波</h3><div class="stayline">10/05—10/06 · 1晚</div><span class="tag coral">雪山与冰川飞行</span><ul><li><b>10/05上午：</b>皇后镇乘早班InterCity巴士前往特卡波，约4–4.25小时。</li><li><b>10/05下午：</b>Air Safaris Grand Traverse，飞行约50分钟，可观赏特卡波湖、普卡基湖、库克山、冰川及河谷。</li><li>之后游览牧羊人教堂、特卡波湖；晚上视天气观星。</li><li><b>10/06：</b>退房后经基督城前往凯库拉。</li></ul><div class="dest-price">双人住宿预算<strong>¥1,000–1,400 / 1晚</strong>Air Safaris Grand Traverse双人约¥3,700–3,900（按NZ$495/人及汇率估算）；2027年10月新价待确认。</div><div class="note">10/5是唯一计划飞行日，不预留10/6补飞；若天气取消，改为地面游览。</div><div class="optional-panel"><b>备选体验</b><p>如Air Safaris结束较早且天气合适，可去Tekapo Springs泡温泉，或参加夜间观星活动；若交通接驳、天气或体力不允许，保留湖边散步即可，不再增加远距离项目。</p></div><div class="stay-recommendation"><div class="stay-label">推荐住宿区域 · TEKAPO</div><b>首选：Lake Tekapo Village Centre村中心</b><p>建议选择Four Square超市、餐厅、InterCity巴士站及湖滨步行范围内的motel、guesthouse或小型旅馆。此处步行可到牧羊人教堂、湖边及Air Safaris相关服务点，适合仅住一晚且不自驾的安排。优先选村中心、有明确入住联络方式及良好门锁照明的住宿，不建议订远离村庄且无接驳的独立房源。</p><p><b>预订提示：</b>特卡波住宿总量有限，湖景房通常溢价；优先考虑村中心干净、评价稳定的普通房型，不必为湖景支付过高费用。订房前确认巴士站至住宿的步行距离及Air Safaris接送安排。</p><p class="small"><a href="https://www.discovertekapo.co.nz/about-tekapo/tekapo-shops-services/" target="_blank" rel="noreferrer">特卡波村设施与服务分布 ↗</a></p></div><div class="small" style="margin-top:10px"><a href="https://airsafaris.co.nz/" target="_blank" rel="noreferrer">Air Safaris 官方预订 ↗</a>　<a href="https://www.intercity.co.nz/" target="_blank" rel="noreferrer">InterCity ↗</a></div></article>
-<article class="card destination"><div class="city-no">03 / SOUTH ISLAND</div><h3>Kaikōura 凯库拉</h3><div class="stayline">10/06—10/07 · 1晚</div><span class="tag gold">海洋野生动物</span><ul><li><b>10/06：</b>特卡波→基督城→凯库拉，巴士及转乘等待合计约6–8小时；抵达后入住、海边散步。</li><li><b>10/07 07:15：</b>观鲸集合、签到；07:45左右出发，整体体验约3小时15分钟。</li><li>观鲸结束后前往基督城机场，搭乘较晚航班飞往奥克兰。</li></ul><div class="dest-price">双人住宿预算<strong>¥800–1,100 / 1晚</strong>双人观鲸约¥1,280（按平台约¥640/人估算），2027年票价待确认。</div><div class="note">观鲸受海况影响且野生动物目击不保证；10/7没有额外补救日。</div><div class="optional-panel"><b>备选体验</b><p>若10/6抵达凯库拉时仍有日照，可选择Kaikōura Peninsula Walkway的一小段或Point Kean海豹观赏点；不建议安排完整步道。10/7观鲸后须优先赶往基督城机场，不增加其他景点。</p></div><div class="stay-recommendation"><div class="stay-label">推荐住宿区域 · KAIKŌURA</div><b>首选：Kaikōura Township镇中心 / Esplanade海滨一带</b><p>建议住在镇中心、Churchill Street或Esplanade周边，步行可到餐厅、超市及海岸步道，且早晨打车或接驳前往Whale Watch集合点较方便。优先选择评价稳定、入口照明良好且能协助安排清晨交通的正规motel或旅馆。镇中心到观鲸运营方集合地点仍需安排车辆，不能默认步行可达。</p><p><b>性价比备选：</b>镇中心外围的motel或holiday park，优先选择有免费停车、可协助清晨接送或可提前安排出租车的住宿。10月7日集合较早，订房时确认早餐及退房安排。</p><p class="small"><a href="https://whalewatchkaikoura.org/location/" target="_blank" rel="noreferrer">Whale Watch集合地点及住宿位置建议 ↗</a></p></div><div class="small" style="margin-top:10px"><a href="https://whalewatch.co.nz/" target="_blank" rel="noreferrer">Whale Watch Kaikōura ↗</a>　<a href="https://www.kaikoura.co.nz/" target="_blank" rel="noreferrer">Kaikōura旅游信息 ↗</a></div></article>
-<article class="card destination"><div class="city-no">04 / NORTH ISLAND</div><h3>Auckland 奥克兰</h3><div class="stayline">10/07—10/09 · 2晚</div><span class="tag">电影场景与萤火虫</span><ul><li><b>10/07：</b>基督城飞抵奥克兰，入住、休息。</li><li><b>10/08：</b>参加北岛一日组合团：霍比特人村中文导览＋Waitomo Glowworm Caves。</li><li><b>10/09：</b>11:00 AKL→PEK，返回北京。</li></ul><div class="dest-price">双人住宿预算<strong>¥1,800–2,200 / 2晚</strong>霍比特人村＋Waitomo组合团双人约¥2,600–3,000（按¥1,300–1,500/人估算）；须确认奥克兰往返、中文导览及两处门票均包含。</div><div class="note">建议同一运营商完成全程接送，不自行拼接公共交通；中文导览场次待确认。</div><div class="optional-panel"><b>备选体验</b><p>10/7抵达奥克兰后，如航班较早且尚有精力，可在Viaduct Harbour、Britomart或Commercial Bay附近散步、用餐；10/8组合团为全天行程，不再叠加其他景点；10/9返程日不安排额外活动。</p></div><div class="stay-recommendation"><div class="stay-label">推荐住宿区域 · AUCKLAND</div><b>首选：CBD下段Queen Street / Britomart / SkyCity周边</b><p>建议住在Britomart、Commercial Bay、SkyCity或Queen Street下段，餐饮、公交及机场SkyDrive接驳较方便，也便于确认一日游市区集合点。选择靠近主街、照明良好且有前台的正规酒店；夜间尽量避免穿越偏僻街巷。</p><p><b>性价比备选：</b>CBD上段靠近Aotea Square一带，通常有更多中档住宿选择，但订房前要确认步行至机场巴士站及一日游集合点的距离。若只住两晚，不建议为省少量房费住到远离市区的机场周边。</p><p class="small"><a href="https://www.aucklandtourism.org/where-to-stay-in-auckland/" target="_blank" rel="noreferrer">奥克兰住宿区域指南 ↗</a></p></div><div class="small" style="margin-top:10px"><a href="https://www.hobbitontours.com/" target="_blank" rel="noreferrer">Hobbiton ↗</a>　<a href="https://www.waitomo.com/" target="_blank" rel="noreferrer">Waitomo ↗</a></div></article>
-</div>
-<div class="callout"><strong>10/5—10/7为关键转场窗口：</strong>10/5先乘早班巴士抵达特卡波，再参加下午Air Safaris；10/6通过基督城转往凯库拉；10/7先参加07:45观鲸，再前往基督城机场搭乘较晚航班。建议先核对交通班次，再预订不可退改的活动和机票。</div>
-</div></section>
-<section class="section" id="budget"><div class="wrap">
-<div class="section-head"><div><div class="kicker">06 · TWO-PERSON BUDGET</div><h2>双人预算 · 按最新机票与平台价重估</h2></div><p>机票暂按你目前查到的约¥9,200/人计；活动优先采用你提供的平台报价，地面交通按提前购买公共巴士及必要接驳测算。所有金额均为两人合计，2027年10月实际价格以开放预订后为准。</p></div>
-<div class="budget-hero"><div class="budget-number"><span>UPDATED ESTIMATE · 双人预算</span><strong>¥47,000–50,600</strong><small>含两人跳伞影像套餐；不含备选项目</small></div><div class="budget-number alt"><span>YOUR REVISED TARGET · 调整后预算</span><strong>¥44,000–45,000</strong><small>比原¥42,000上限增加¥2,000–3,000</small></div></div>
-<div class="card"><h3 style="margin:0 0 12px">一、核心活动费用（双人）</h3><table class="budget-table"><thead><tr><th>必选项目</th><th>单人参考价</th><th>双人预算</th><th>价格口径</th></tr></thead><tbody>
-<tr><td>大洋路一日游</td><td>约¥400–600</td><td><strong>¥800–1,200</strong></td><td>按拼团平台参考价估算；确认是否含墨尔本市区接送及十二门徒岩等主要停靠点。</td></tr>
-<tr><td>NZONE 12,000英尺跳伞</td><td>约¥1,750–1,800</td><td><strong>¥3,500–3,600</strong></td><td>按12,000英尺估算；15,000英尺价格更高，本行程不按15,000英尺计。</td></tr>
-<tr><td>跳伞照片/视频（两人均购买）</td><td>约¥780–830</td><td><strong>¥1,570–1,650</strong></td><td>按NZ$209/人折算；下单时确认是否为完整照片＋视频套餐。</td></tr>
-<tr><td>Air Safaris Grand Traverse（50分钟）</td><td>约¥1,850–1,900</td><td><strong>¥3,700–3,900</strong></td><td>按NZ$495/人折算；目前官网标价适用期截至2026-09-30，2027年10月价格需重新确认。</td></tr>
-<tr><td>凯库拉观鲸</td><td>约¥640</td><td><strong>¥1,280</strong></td><td>按你查到的平台参考价；确认成人标准舱及平台服务费。</td></tr>
-<tr><td>霍比特人村＋Waitomo萤火虫洞</td><td>约¥1,300–1,500</td><td><strong>¥2,600–3,000</strong></td><td>按携程/飞猪参考价；确认奥克兰往返接送、中文导览及两处门票全部包含。</td></tr>
-<tr><td><strong>核心活动合计</strong></td><td>—</td><td><strong>¥13,450–14,630</strong></td><td>含两人跳伞影像；不含Shotover Jet及Skyline Luge。</td></tr>
+<article class="card destination"><div class="city-no">03 / SOUTH ISLAND</div><h3>Kaikōura 凯库拉</h3><div class="stayline">10/06—10/07 · 1晚</div><span class="tag gold">海洋野生动物</span><ul><li><b>10/06：</b>特卡波→基督城→凯库拉，巴士及转乘等待合计约6–8小时；抵达后入住、海边散步。</li><li><b>10/07 07:15：</b>观鲸集合、签到；07:45左右出发，整体体验约3小时15分钟。</li><li>观鲸结束后前往基督城机场，搭乘较晚航班飞往奥克兰。</li></ul><div class="dest-price">双人住宿预算<strong>¥800–1,100 / 1晚</strong>双人观鲸约¥1,280（按平台约¥640/人估算），2027年票价待确认。</div><div class="note">观鲸受海况影响且野生动物目击不保证；10/7没有额外补救日。</div><div class="optional-panel"><b>备选体验</b><p>若10/6抵达凯库拉时仍有日照，可选择Kaikōura Peninsula Walkway的一小段或Point Kean海豹观赏点；不建议安排完整步道。10/7观鲸后须优先赶往基督城机场，不增加其他景点。</p></div><div class="stay-recommendation"><div cl<section class="section" id="budget"><div class="wrap">
+<div class="section-head"><div><div class="kicker">06 · TWO-PERSON BUDGET</div><h2>双人预算 · 按实际路线重新估算</h2></div><p>按两人同行、8晚住宿、不自驾、核心Tour全部参加测算。机票采用你目前查到的¥9,200/人；住宿按安全、交通方便、评价稳定的中档酒店/民宿双人间估算，不以最低价为目标。</p></div>
+<div class="budget-hero"><div class="budget-number"><span>ESTIMATED TOTAL · 必选项目双人总预算</span><strong>¥49,700–58,300</strong><small>建议先按约¥54,000准备；不含跳伞影像、Luge五圈及Shotover Jet</small></div><div class="budget-number alt"><span>FLIGHT COST · 机票口径</span><strong>¥19,400–20,000</strong><small>主机票¥18,400 + CHC→AKL约¥1,000–1,600</small></div></div>
+<div class="card"><h3 style="margin:0 0 12px">一、住宿预算｜按城市和实际入住晚数</h3><p class="small">按2026年10月可查到的同季节市场价格作参考，推算2027年10月两人一间的大床房/双人间。优先考虑正规酒店、评价稳定的Motel或整洁民宿，靠近交通站点和Tour集合点。2027年实际日期价格可能有波动，建议选可免费取消的房价。</p>
+<table class="budget-table"><thead><tr><th>日期 / 晚数</th><th>推荐区域</th><th>双人间每晚参考</th><th>该城市小计</th></tr></thead><tbody>
+<tr><td>10/1–10/3 · 2晚</td><td>墨尔本CBD西侧 / Southern Cross、Flagstaff</td><td>¥1,000–1,350</td><td><strong>¥2,000–2,700</strong></td></tr>
+<tr><td>10/3–10/5 · 2晚</td><td>皇后镇Town Centre，靠近市区接送点</td><td>¥1,200–1,650</td><td><strong>¥2,400–3,300</strong></td></tr>
+<tr><td>10/5–10/6 · 1晚</td><td>特卡波Village Centre，巴士站/湖边步行范围</td><td>¥1,050–1,450</td><td><strong>¥1,050–1,450</strong></td></tr>
+<tr><td>10/6–10/7 · 1晚</td><td>凯库拉镇中心 / Esplanade</td><td>¥700–1,000</td><td><strong>¥700–1,000</strong></td></tr>
+<tr><td>10/7–10/9 · 2晚</td><td>奥克兰CBD下段 / Britomart、Queen Street</td><td>¥900–1,300</td><td><strong>¥1,800–2,600</strong></td></tr>
+<tr><td><strong>8晚合计</strong></td><td>—</td><td>—</td><td><strong>¥7,950–11,050</strong></td></tr>
 </tbody></table>
-<div class="callout"><strong>跳伞高度：</strong>目前仍按两人12,000英尺预算。NZONE官网现行参考价为12,000英尺NZ$469、15,000英尺NZ$575，影像套餐另计。若改回15,000英尺，双人基础跳伞费用约增加¥800；此处不预先计入。</div></div>
+<div class="callout"><strong>住宿怎么选：</strong>这不是背包客床位预算。墨尔本和奥克兰选交通方便的正规3–4星酒店；皇后镇优先Town Centre步行范围内、但避开酒吧街正上方的房间；特卡波建议村中心正规Motel/Guesthouse，房量少应较早订；凯库拉选择镇中心或海滨Motel，确认清晨去观鲸集合点的交通。不要为了省每晚一两百元住到偏远、夜间交通不便的地方。<br><span class="small">市场参考：墨尔本CBD 2026年10月双人房均价参考、皇后镇中心10月价格带、特卡波当前双人房挂牌价、凯库拉Motel双人房报价及奥克兰CBD双人房月度价格趋势，均非2027年实际报价。</span></div>
+</div>
 <div style="height:14px"></div>
-<div class="card"><h3 style="margin:0 0 12px">二、全程费用总表（双人）</h3><table class="budget-table"><thead><tr><th>费用类别</th><th>双人估算</th><th>重新核算说明</th></tr></thead><tbody>
-<tr><td>机票（PEK–MEL、MEL–ZQN、CHC–AKL、AKL–PEK）</td><td><strong>¥18,400</strong></td><td>按你目前查到约¥9,200/人计，暂假设该价格覆盖本路线全部必要航段并含行李。</td></tr>
-<tr><td>澳大利亚600签证＋NZeTA / IVL</td><td>¥3,200–3,500</td><td>按600签证AUD250/人、NZeTA手机App NZD17/人及IVL NZD100/人测算；以申请时官方收费及汇率为准。</td></tr>
-<tr><td>住宿（8晚）</td><td>¥7,500–8,500</td><td>两人一间；优先选择交通方便的经济型酒店、Motel或公寓，不按湖景房或高星酒店测算。</td></tr>
+<div class="card"><h3 style="margin:0 0 12px">二、必选Tour及体验费用｜双人</h3><table class="budget-table"><thead><tr><th>项目</th><th>双人预算</th><th>说明</th></tr></thead><tbody>
+<tr><td>大洋路一日游</td><td><strong>¥1,400–1,800</strong></td><td>参考标准团约AUD159/人；含往返交通和主要景点停靠，具体中文团价格另核。</td></tr>
+<tr><td>NZONE 12,000英尺跳伞</td><td><strong>¥3,500–3,800</strong></td><td>仅计算基础跳伞，两人均参加；不含照片/视频。</td></tr>
+<tr><td>Air Safaris Grand Traverse 50分钟</td><td><strong>¥3,700–4,100</strong></td><td>按NZ$495–535/人估算；官网当前NZ$535参考价，2027年10月票价仍需确认。</td></tr>
+<tr><td>凯库拉观鲸</td><td><strong>¥1,280</strong></td><td>按你查到的¥640/人平台价。</td></tr>
+<tr><td>霍比特人村中文团＋Waitomo萤火虫洞</td><td><strong>¥2,600–3,000</strong></td><td>按携程/飞猪¥1,300–1,500/人；须确认奥克兰往返、两处门票及中文导览。</td></tr>
+<tr><td><strong>必选Tour合计</strong></td><td><strong>¥12,480–13,980</strong></td><td>不含跳伞影像、Skyline Luge及Shotover Jet。</td></tr>
+</tbody></table>
+<div class="callout"><strong>Air Safaris价格更新：</strong>你查到的NZ$495/人是很有价值的平台参考；Air Safaris目前官网对Grand Traverse列示NZ$535/人，飞行约50分钟。考虑2027年10月尚未到最终价格确认期，预算按NZ$495–535/人区间，不把旧价当作保证成交价。<br><strong>跳伞：</strong>继续按此前确认的12,000英尺计算。跳伞影像套餐独立列为可选消费，不计入本页必选总预算。</div>
+</div>
+<div style="height:14px"></div>
+<div class="card"><h3 style="margin:0 0 12px">三、全程必须支出｜双人费用总表</h3><table class="budget-table"><thead><tr><th>费用类别</th><th>双人预算</th><th>测算口径</th></tr></thead><tbody>
+<tr><td>机票主组合</td><td><strong>¥18,400</strong></td><td>你目前查到¥9,200/人，包含北京→墨尔本、墨尔本→皇后镇、奥克兰→北京。</td></tr>
+<tr><td>基督城→奥克兰机票</td><td><strong>¥1,000–1,600</strong></td><td>另行购买，按两人含必要行李预留；10/7建议选较晚航班，为观鲸及凯库拉→机场转场留足缓冲。</td></tr>
+<tr><td>澳大利亚600签证＋NZeTA/IVL</td><td><strong>¥3,200–3,500</strong></td><td>两人估算；按澳洲境外600申请费AUD250/人及新西兰NZeTA、IVL参考费用折算。</td></tr>
+<tr><td>住宿8晚</td><td><strong>¥7,950–11,050</strong></td><td>按上表双人间、交通方便且评价稳定的中档住宿估算。</td></tr>
+<tr><td>必选Tour</td><td><strong>¥12,480–13,980</strong></td><td>大洋路、12,000英尺跳伞、Air Safaris、观鲸、霍比特人＋Waitomo。</td></tr>
+<tr><td>地面交通及接驳</td><td><strong>¥3,000–4,000</strong></td><td>含机场至市区、皇后镇→特卡波、特卡波→基督城→凯库拉、凯库拉→基督城机场，以及城市内必要交通；不按包车计算。</td></tr>
+<tr><td>餐饮</td><td><strong>¥3,500–4,500</strong></td><td>9天两人正常旅行消费，含咖啡、简餐及部分正餐，不按极限节省估算。</td></tr>
+<tr><td>旅行保险及杂费</td><td><strong>¥800–1,200</strong></td><td>需明确承保高空跳伞，并留出手续费、行李或零星支出缓冲。</td></tr>
+<tr><td><strong>必须支出合计</strong></td><td><strong>¥49,700–58,300</strong></td><td><strong>建议以约¥54,000作为当前准备金额。</strong></td></tr>
+</tbody></table>
+</div>
+<div class="budget-calc" id="budget-calculator">
+<div class="calc-intro"><div><div class="kicker">LIVE BUDGET TOOL</div><h3>自己改价格，实时算总额</h3><p>下面默认值采用本次估算的中间值。你可以直接修改某个城市每晚房价、机票、Tour或餐饮预算，页面会自动更新住宿小计、Tour小计和双人总预算。</p></div><span class="tag">双人 · 人民币</span></div>
+<div class="calc-group"><h4>① 住宿｜输入每晚双人房价格</h4><div class="calc-grid">
+<div class="calc-row"><label for="stay-mel">墨尔本 · 2晚<small>CBD / Southern Cross</small></label><div class="calc-input-wrap"><input id="stay-mel" class="calc-input" type="number" min="0" step="50" value="1175" data-default="1175" data-kind="stay" data-nights="2"><span class="calc-unit">元/晚</span></div></div>
+<div class="calc-row"><label for="stay-zqn">皇后镇 · 2晚<small>Town Centre</small></label><div class="calc-input-wrap"><input id="stay-zqn" class="calc-input" type="number" min="0" step="50" value="1425" data-default="1425" data-kind="stay" data-nights="2"><span class="calc-unit">元/晚</span></div></div>
+<div class="calc-row"><label for="stay-tekapo">特卡波 · 1晚<small>Village Centre</small></label><div class="calc-input-wrap"><input id="stay-tekapo" class="calc-input" type="number" min="0" step="50" value="1250" data-default="1250" data-kind="stay" data-nights="1"><span class="calc-unit">元/晚</span></div></div>
+<div class="calc-row"><label for="stay-kaikoura">凯库拉 · 1晚<small>Town Centre / Esplanade</small></label><div class="calc-input-wrap"><input id="stay-kaikoura" class="calc-input" type="number" min="0" step="50" value="850" data-default="850" data-kind="stay" data-nights="1"><span class="calc-unit">元/晚</span></div></div>
+<div class="calc-row"><label for="stay-akl">奥克兰 · 2晚<small>CBD / Britomart</small></label><div class="calc-input-wrap"><input id="stay-akl" class="calc-input" type="number" min="0" step="50" value="1100" data-default="1100" data-kind="stay" data-nights="2"><span class="calc-unit">元/晚</span></div></div>
+</div></div>
+<div class="calc-group"><h4>② 机票、签证及必选Tour｜输入双人合计</h4><div class="calc-grid">
+<div class="calc-row"><label for="flight-main">主机票组合<small>PEK–MEL / MEL–ZQN / AKL–PEK</small></label><div class="calc-input-wrap"><input id="flight-main" class="calc-input" type="number" min="0" step="100" value="18400" data-default="18400" data-kind="fixed"><span class="calc-unit">元</span></div></div>
+<div class="calc-row"><label for="flight-chc">基督城→奥克兰机票<small>两人含行李预算</small></label><div class="calc-input-wrap"><input id="flight-chc" class="calc-input" type="number" min="0" step="50" value="1300" data-default="1300" data-kind="fixed"><span class="calc-unit">元</span></div></div>
+<div class="calc-row"><label for="visa-cost">澳洲600＋NZeTA/IVL<small>两人合计</small></label><div class="calc-input-wrap"><input id="visa-cost" class="calc-input" type="number" min="0" step="50" value="3350" data-default="3350" data-kind="fixed"><span class="calc-unit">元</span></div></div>
+<div class="calc-row"><label for="tour-gor">大洋路一日团<small>两人合计</small></label><div class="calc-input-wrap"><input id="tour-gor" class="calc-input" type="number" min="0" step="50" value="1600" data-default="1600" data-kind="fixed"><span class="calc-unit">元</span></div></div>
+<div class="calc-row"><label for="tour-skydive">NZONE 12,000英尺基础跳伞<small>两人；不含影像</small></label><div class="calc-input-wrap"><input id="tour-skydive" class="calc-input" type="number" min="0" step="50" value="3650" data-default="3650" data-kind="fixed"><span class="calc-unit">元</span></div></div>
+<div class="calc-row"><label for="tour-air">Air Safaris Grand Traverse<small>50分钟，两人</small></label><div class="calc-input-wrap"><input id="tour-air" class="calc-input" type="number" min="0" step="50" value="3900" data-default="3900" data-kind="fixed"><span class="calc-unit">元</span></div></div>
+<div class="calc-row"><label for="tour-whale">凯库拉观鲸<small>两人合计</small></label><div class="calc-input-wrap"><input id="tour-whale" class="calc-input" type="number" min="0" step="50" value="1280" data-default="1280" data-kind="fixed"><span class="calc-unit">元</span></div></div>
+<div class="calc-row"><label for="tour-hobbit">霍比特人村＋Waitomo<small>中文团，两人合计</small></label><div class="calc-input-wrap"><input id="tour-hobbit" class="calc-input" type="number" min="0" step="50" value="2800" data-default="2800" data-kind="fixed"><span class="calc-unit">元</span></div></div>
+</div></div>
+<div class="calc-group"><h4>③ 交通、餐饮及其他｜双人合计</h4><div class="calc-grid">
+<div class="calc-row"><label for="ground-cost">地面交通及接驳<small>含南岛巴士和凯库拉机场转场</small></label><div class="calc-input-wrap"><input id="ground-cost" class="calc-input" type="number" min="0" step="50" value="3500" data-default="3500" data-kind="fixed"><span class="calc-unit">元</span></div></div>
+<div class="calc-row"><label for="food-cost">餐饮<small>9天两人正常消费</small></label><div class="calc-input-wrap"><input id="food-cost" class="calc-input" type="number" min="0" step="50" value="4000" data-default="4000" data-kind="fixed"><span class="calc-unit">元</span></div></div>
+<div class="calc-row"><label for="insurance-cost">旅行保险及杂费<small>须承保高空跳伞</small></label><div class="calc-input-wrap"><input id="insurance-cost" class="calc-input" type="number" min="0" step="50" value="1000" data-default="1000" data-kind="fixed"><span class="calc-unit">元</span></div></div>
+</div></div>
+<div class="calc-summary"><div><span>住宿合计 · 自动计算</span><b id="calc-stay-total">¥9,500</b></div><div><span>必选Tour合计 · 自动计算</span><b id="calc-tour-total">¥13,230</b></div><div><span>机票合计 · 自动计算</span><b id="calc-flight-total">¥19,700</b></div></div>
+<div class="calc-total"><span>当前双人必选项目总预算</span><strong id="calc-grand-total">¥53,780</strong></div>
+<div class="calc-actions"><button type="button" class="calc-reset" id="calc-reset">恢复本次建议价格</button><span class="small">修改任一数字后自动重新计算，无需提交。</span></div>
+<p class="calc-note">计算说明：住宿按输入的每晚双人房价格×实际晚数计算；其余项目均输入双人合计。此计算器仅计必选支出，不包括跳伞影像、Skyline Luge五圈、Shotover Jet、购物及个人额外消费。机票主组合按¥9,200/人，包含北京→墨尔本、墨尔本→皇后镇、奥克兰→北京；基督城→奥克兰另计。预算不代表已预订报价。</p>
+</div>
+<div class="optional-panel"><b>四、单独列账的备选项目（不计入必须支出）</b><p><b>跳伞影像套餐：</b>按你找到的NZ$209/人，双人约¥1,570–1,650；可在确定拍摄内容后再决定。<br><b>Skyline Gondola＋Luge 5圈：</b>按你找到的¥373/人，双人约¥746。<br><b>Shotover Jet：</b>继续作为备选，另按实际订票价格计算。</p></div>
+<div class="callout"><strong>行程衔接提醒：</strong>10月5日皇后镇→特卡波的巴士抵达后再安排Air Safaris，建议预订下午场，并提前确认Air Safaris机场接送；若巴士延误或天气取消，不安排10月6日补飞。10月6日特卡波→基督城→凯库拉为长距离转场，当天只安排入住和海边散步。10月7日凯库拉观鲸后返回基督城机场，建议把CHC→AKL订在傍晚（优先17:00以后），给观鲸结束、取行李和公路转场留足缓冲；不要选紧接观鲸的早下午航班。10月8日霍比特人村中文团＋Waitomo为全天组合团，优先确认奥克兰市区往返和中文导览。<br><br><strong>票价依据：</strong>你提供的平台价用于跳伞影像、观鲸和北岛中文团；公开参考包括NZONE 12,000英尺NZ$469、Air Safaris Grand Traverse现行官网NZ$535（50分钟）、大洋路一日团公开价格约AUD159/人。2027年10月的实际价格可能更新。</div>
+<div class="small" style="margin-top:12px">价格与区域参考：<a href="https://www.nzoneskydive.co.nz/prices-deals/" target="_blank" rel="noreferrer">NZONE官方价格</a> · <a href="https://airsafaris.co.nz/zh/the-grand-traverse/" target="_blank" rel="noreferrer">Air Safaris官方价格</a> · <a href="https://www.visitmelbourne.com/regions/Melbourne/See-and-do/Tours/Coach-tours/Go-West-Tours/Great-Ocean-Road-Day-Tour-2" target="_blank" rel="noreferrer">大洋路一日团参考价</a> · <a href="https://www.expedia.com/Melbourne-Central-Business-District-Melbourne-Hotels.0-n6052020-0.Travel-Guide-Filter-Hotels" target="_blank" rel="noreferrer">墨尔本CBD房价趋势</a> · <a href="https://www.expedia.com/Queenstown-City-Centre-Queenstown-Hotels.0-n6216654-0.Travel-Guide-Filter-Hotels" target="_blank" rel="noreferrer">皇后镇房价趋势</a> · <a href="https://www.discovertekapo.co.nz/accommodation/" target="_blank" rel="noreferrer">特卡波住宿</a> · <a href="https://motelkaikoura.co.nz/accommodation/" target="_blank" rel="noreferrer">凯库拉Motel参考</a> · <a href="https://www.expedia.com/Auckland-Central-Business-District-Auckland-Hotels.0-n6052693-0.Travel-Guide-Filter-Hotels" target="_blank" rel="noreferrer">奥克兰CBD房价趋势</a></div>
+</div></section>
+¥7,500–8,500</td><td>两人一间；优先选择交通方便的经济型酒店、Motel或公寓，不按湖景房或高星酒店测算。</td></tr>
 <tr><td>核心活动</td><td>¥13,450–14,630</td><td>采用上表平台价格，含两人跳伞影像。</td></tr>
 <tr><td>地面交通及接送</td><td>¥2,000–2,600</td><td>按提前预订InterCity巴士、公共机场巴士及必要的凯库拉机场接驳估算；不按全程包车计算。</td></tr>
 <tr><td>餐饮</td><td>¥1,800–2,200</td><td>按早餐/部分简餐自理、超市采购搭配普通餐厅估算。</td></tr>
@@ -219,7 +296,7 @@ a{color:inherit;text-decoration:none}a:hover{color:var(--coral)}.wrap{width:min(
 <div class="place-row"><time>03</time><div><b>10/5 ZQN → Tekapo早班巴士</b><p>核实抵达时间，联系Air Safaris安排机场接送；预订下午较晚的飞行场次。</p></div></div>
 <div class="place-row"><time>04</time><div><b>10/6 Tekapo → Christchurch → Kaikōura</b><p>核实两段巴士实际时刻与转乘等待，确保当天能抵达凯库拉。</p></div></div>
 <div class="place-row"><time>05</time><div><b>10/7 07:45 Whale Watch观鲸</b><p>确认集合时间、海况取消政策，并预订凯库拉至基督城机场的接送。</p></div></div>
-<div class="place-row"><time>06</time><div><b>10/7 CHC → AKL晚班航班</b><p>确保观鲸结束后有足够时间抵达机场；不要购买衔接过紧的分开出票组合。</p></div></div>
+<div class="place-row"><time>06</time><div><b>另购10/7 CHC → AKL机票</b><p>不包含在¥9,200/人主机票组合中；建议购买傍晚航班，核对托运行李和机场接驳，观鲸后预留充足转场时间。</p></div></div>
 <div class="place-row"><time>07</time><div><b>10/8 霍比特人中文团＋Waitomo</b><p>确认普通话导览、萤火虫洞时段及奥克兰往返组合接送。</p></div></div>
 <div class="place-row"><time>08</time><div><b>8晚住宿与旅行保险</b><p>按网页推荐区域筛选住宿；优先可取消房价、靠近交通枢纽及集合点的正规住宿。保险须明确承保高空跳伞。</p></div></div>
 </div></div>
@@ -239,5 +316,43 @@ a{color:inherit;text-decoration:none}a:hover{color:var(--coral)}.wrap{width:min(
 </div></section>
 </main>
 <footer class="wrap footer"><div><b>南半球，慢慢走。</b><p>2027.09.30—10.09 · 墨尔本、大洋路、皇后镇、特卡波、凯库拉、奥克兰 · 双人旅行规划<br>本页面为行程规划及预算估算，不保证签证获批、野生动物目击或活动因天气正常运营。所有政策、班次、价格及入境要求须在预订和出发前再次核实。</p></div><a href="#top">回到顶部 ↑</a></footer>
+
+<script>
+(function(){
+ const inputs=Array.from(document.querySelectorAll('#budget-calculator .calc-input'));
+ if(!inputs.length) return;
+ const fmt=n=>'¥'+Math.round(n).toLocaleString('zh-CN');
+ function val(el){const n=Number(el.value);return Number.isFinite(n)&&n>0?n:0}
+ function recalc(){
+   let stay=0,tours=0,flights=0,other=0;
+   inputs.forEach(el=>{
+     const v=val(el),kind=el.dataset.kind;
+     if(kind==='stay') stay+=v*Number(el.dataset.nights||1);
+     else if(kind==='tour') tours+=v;
+     else if(kind==='flight'){flights+=v}
+     else other+=v;
+   });
+   // Flight line items are separated from other fixed costs by id.
+   flights=val(document.getElementById('flight-main'))+val(document.getElementById('flight-chc'));
+   const tourIds=['tour-gor','tour-skydive','tour-air','tour-whale','tour-hobbit'];
+   tours=tourIds.reduce((s,id)=>s+val(document.getElementById(id)),0);
+   const visa=val(document.getElementById('visa-cost'));
+   const ground=val(document.getElementById('ground-cost'));
+   const food=val(document.getElementById('food-cost'));
+   const insurance=val(document.getElementById('insurance-cost'));
+   const total=stay+flights+visa+tours+ground+food+insurance;
+   document.getElementById('calc-stay-total').textContent=fmt(stay);
+   document.getElementById('calc-tour-total').textContent=fmt(tours);
+   document.getElementById('calc-flight-total').textContent=fmt(flights);
+   document.getElementById('calc-grand-total').textContent=fmt(total);
+ }
+ inputs.forEach(el=>el.addEventListener('input',recalc));
+ document.getElementById('calc-reset').addEventListener('click',()=>{
+   inputs.forEach(el=>el.value=el.dataset.default||0);
+   recalc();
+ });
+ recalc();
+})();
+</script>
 </body>
 </html>
