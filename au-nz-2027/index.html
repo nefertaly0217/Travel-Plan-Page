@@ -1,0 +1,188 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="theme-color" content="#f5f1e7">
+<meta name="description" content="2027 澳大利亚墨尔本 × 新西兰旅行手账。双人同行，8晚9天，不自驾。">
+<title>南半球，慢慢走。｜澳大利亚 × 新西兰 2027</title>
+<style>
+:root{--paper:#f5f1e7;--paper2:#fbf9f3;--ink:#243a35;--muted:#6d7971;--pine:#557568;--pine2:#dce7dd;--coral:#c9826d;--coral2:#f2e2d9;--ochre:#c5a15f;--line:#d9d3c4;--white:#fffdf8;--shadow:0 16px 44px rgba(55,65,53,.07);--serif:"Noto Serif SC","Songti SC","STSong",Georgia,serif;--sans:Inter,-apple-system,BlinkMacSystemFont,"Segoe UI","PingFang SC","Hiragino Sans GB","Microsoft YaHei",sans-serif}
+*{box-sizing:border-box}html{scroll-behavior:smooth;scroll-padding-top:90px}body{margin:0;background:var(--paper);color:var(--ink);font-family:var(--sans);line-height:1.72;font-size:15px;background-image:radial-gradient(rgba(74,83,67,.055) .65px,transparent .65px);background-size:8px 8px}
+a{color:inherit;text-decoration:none}a:hover{color:var(--coral)}.wrap{width:min(1120px,calc(100% - 44px));margin:auto}
+.topbar{position:sticky;top:0;z-index:20;background:rgba(245,241,231,.91);backdrop-filter:blur(14px);border-bottom:1px solid rgba(217,211,196,.75)}
+.nav{height:64px;display:flex;align-items:center;justify-content:space-between;gap:24px}.brand{font-family:var(--serif);font-size:17px;letter-spacing:.08em;font-weight:700}.brand small{font:10px var(--sans);letter-spacing:.18em;color:var(--muted);margin-left:9px}.navlinks{display:flex;gap:22px;align-items:center;font-size:12px;color:var(--muted);letter-spacing:.04em}.navlinks a{padding:7px 0;border-bottom:1px solid transparent}.navlinks a:hover{border-color:var(--coral);color:var(--ink)}
+.hero{padding:70px 0 54px;position:relative;overflow:hidden}.hero-grid{display:grid;grid-template-columns:1.05fr .95fr;gap:40px;align-items:center}.eyebrow,.kicker{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--pine);font-weight:700}.hero h1{font:clamp(42px,6.5vw,76px)/1.2 var(--serif);letter-spacing:.03em;margin:18px 0 12px}.hero h1 em{font-style:normal;color:var(--coral)}.hero-sub{font:18px var(--serif);color:#52655d;margin:0 0 25px}.meta{display:flex;gap:9px;flex-wrap:wrap}.meta span{border:1px solid var(--line);border-radius:30px;padding:6px 12px;font-size:11px;color:#596a60;background:rgba(255,253,248,.5)}.hero-note{font:12px var(--serif);color:var(--muted);margin-top:26px;display:flex;gap:9px;align-items:center}.hero-note:before{content:"";width:30px;border-top:1px dashed var(--coral)}
+.hero-art{position:relative;min-height:320px;border:1px solid var(--line);border-radius:48% 46% 44% 42% / 38% 43% 50% 48%;background:linear-gradient(145deg,#e8ede2,#f1e7d9 65%,#f5eee1);display:flex;align-items:center;justify-content:center;overflow:hidden;box-shadow:var(--shadow)}.hero-art svg{width:100%;height:auto;max-height:340px}.art-caption{position:absolute;bottom:24px;right:30px;font:italic 12px var(--serif);color:#63746b;letter-spacing:.08em}
+.section{padding:62px 0;border-top:1px solid var(--line)}.section-head{display:flex;align-items:end;justify-content:space-between;gap:24px;margin-bottom:28px}.section-head h2{font:clamp(27px,4vw,39px)/1.3 var(--serif);margin:8px 0 0;letter-spacing:.03em}.section-head p{max-width:420px;color:var(--muted);font-size:13px;margin:0}.index{font:italic 13px Georgia,serif;color:var(--coral);letter-spacing:.08em}
+.card{background:rgba(255,253,248,.78);border:1px solid var(--line);border-radius:18px;padding:22px;box-shadow:0 8px 28px rgba(55,65,53,.035)}.card h3{font:20px var(--serif);margin:0 0 8px}.muted{color:var(--muted)}.small{font-size:12px;color:var(--muted)}.tag{display:inline-flex;align-items:center;border-radius:30px;padding:4px 9px;background:var(--pine2);color:#466256;font-size:10px;letter-spacing:.05em}.tag.coral{background:var(--coral2);color:#975e4e}.tag.gold{background:#f2ead7;color:#8d713b}
+.overview-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}.route-card{padding:24px;position:relative;overflow:hidden}.route-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:22px 0 18px}.route-node{min-width:92px;text-align:center}.route-node b{display:block;font-size:13px}.route-node small{font-size:10px;color:var(--muted);letter-spacing:.08em}.route-arrow{color:var(--coral);font-size:17px}.stays{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.stay{background:#f4f0e6;border-radius:12px;padding:13px 10px;text-align:center}.stay b{display:block;font:16px var(--serif)}.stay small{display:block;color:var(--muted);font-size:10px;margin-top:3px}.stay .nights{font-size:11px;color:var(--pine);font-weight:700;margin-top:7px}
+.overview-note{font-size:12px;color:var(--muted);border-left:2px solid var(--ochre);padding-left:12px;margin:17px 0 0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{background:var(--pine2);border-radius:14px;padding:17px}.stat:nth-child(2){background:var(--coral2)}.stat strong{display:block;font:26px var(--serif)}.stat span{font-size:11px;color:var(--muted)}
+.timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.day{position:relative;padding:18px 18px 17px 21px;min-height:144px}.day:before{content:"";position:absolute;left:0;top:18px;bottom:18px;border-left:2px solid var(--pine2)}.day .date{font-size:10px;letter-spacing:.14em;color:var(--coral);font-weight:700}.day h3{font:17px var(--serif);margin:6px 0}.day p{font-size:12px;color:var(--muted);margin:0}.day .overnight{font-size:10px;color:var(--pine);margin-top:10px}
+.flow-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.flow-card{padding:25px}.flow-card .flow-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px}.flow-card h3{margin:0;font:21px var(--serif)}.steps{display:grid;gap:9px}.step{display:grid;grid-template-columns:30px 1fr;gap:11px;align-items:start;padding:12px;background:#f7f4eb;border-radius:12px}.step-num{width:26px;height:26px;border:1px solid var(--pine);border-radius:50%;display:grid;place-items:center;color:var(--pine);font-size:11px;font-weight:700}.step b{display:block;font-size:13px;margin-bottom:2px}.step p{font-size:11px;color:var(--muted);margin:0}.flow-down{text-align:center;color:var(--coral);font-size:15px;line-height:1}
+.callout{margin-top:17px;padding:15px 17px;border:1px dashed #c7bca7;border-radius:13px;background:#fbf8f0;font-size:12px;color:#596a60}.callout strong{color:var(--ink)}
+.flight-map{padding:22px 24px 18px;margin-bottom:18px;background:linear-gradient(135deg,#edf0e7,#f6eee2);border-radius:20px;border:1px solid var(--line);overflow:hidden}.flight-map svg{width:100%;height:auto;display:block}.flight-label{font-size:11px;fill:#31463e;font-family:var(--sans)}.flight-sub{font-size:9px;fill:#6d7971;font-family:var(--sans)}.flight-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.flight-leg{padding:17px}.airport{display:flex;align-items:center;gap:10px}.airport-code{font:25px Georgia,serif;letter-spacing:.08em}.airport-name{font-size:11px;color:var(--muted)}.leg-arrow{color:var(--coral);margin:5px 0;font-size:12px}.price{font:20px var(--serif);color:var(--pine);margin-top:10px}.price small{font:10px var(--sans);color:var(--muted)}
+.split{display:grid;grid-template-columns:.9fr 1.1fr;gap:20px;align-items:stretch}.illustration-panel{background:linear-gradient(145deg,#e8ede2,#f4e8dc);border:1px solid var(--line);border-radius:20px;padding:24px;min-height:240px;display:flex;flex-direction:column;justify-content:space-between}.illustration-panel svg{width:100%;max-height:180px}.place-list{display:grid;gap:10px}.place-row{display:grid;grid-template-columns:90px 1fr auto;gap:12px;align-items:start;padding:13px 0;border-bottom:1px solid var(--line)}.place-row:last-child{border-bottom:0}.place-row time{font-size:11px;color:var(--coral);font-weight:700}.place-row b{display:block;font-size:13px}.place-row p{font-size:11px;color:var(--muted);margin:2px 0 0}.place-row .cost{font-size:11px;color:var(--pine);white-space:nowrap;text-align:right}
+.destination-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}.destination{padding:22px;display:flex;flex-direction:column}.destination .city-no{font:italic 12px Georgia,serif;color:var(--coral)}.destination h3{font:23px var(--serif);margin:6px 0 3px}.destination .stayline{font-size:11px;color:var(--muted);margin-bottom:14px}.destination ul{padding-left:17px;margin:0 0 14px;font-size:12px;color:#596a60}.destination li{margin:6px 0}.destination .dest-price{margin-top:auto;border-top:1px solid var(--line);padding-top:13px;font-size:11px;color:var(--muted)}.destination .dest-price strong{display:block;color:var(--pine);font:17px var(--serif);margin-top:3px}.destination .note{font-size:10px;color:var(--coral);margin-top:8px}
+.budget-hero{display:grid;grid-template-columns:1fr 1fr;gap:14px;margin-bottom:18px}.budget-number{padding:24px;border-radius:18px;background:var(--pine);color:#fffdf8;position:relative;overflow:hidden}.budget-number.alt{background:#a96f5d}.budget-number span{font-size:11px;letter-spacing:.12em;opacity:.8}.budget-number strong{display:block;font:clamp(34px,5vw,48px) var(--serif);margin:7px 0}.budget-number small{font-size:11px;opacity:.82}.budget-table{width:100%;border-collapse:collapse;font-size:12px}.budget-table th,.budget-table td{padding:12px 14px;border-bottom:1px solid var(--line);text-align:left}.budget-table th{font-size:10px;color:var(--muted);font-weight:600;letter-spacing:.08em}.budget-table td:last-child,.budget-table th:last-child{text-align:right;white-space:nowrap}.budget-table tr:last-child td{border-bottom:0;font-weight:700;color:var(--pine)}
+.target-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:9px;margin-top:16px}.target-item{background:#f2eee4;border-radius:12px;padding:12px}.target-item span{font-size:10px;color:var(--muted)}.target-item b{display:block;font:17px var(--serif);margin-top:3px}
+.links{display:flex;gap:10px 18px;flex-wrap:wrap}.links a{font-size:11px;color:var(--pine);text-decoration:underline;text-decoration-color:#b8c7ba;text-underline-offset:3px}.footer{padding:35px 0 50px;border-top:1px solid var(--line);display:flex;justify-content:space-between;gap:24px;align-items:end}.footer p{font-size:11px;color:var(--muted);margin:0;max-width:720px}.footer b{font:17px var(--serif);color:var(--ink);display:block;margin-bottom:5px}
+@media(max-width:800px){.navlinks{gap:12px;overflow:auto;white-space:nowrap}.navlinks a:nth-child(n+5){display:none}.hero{padding:46px 0 38px}.hero-grid,.overview-grid,.split,.flow-grid{grid-template-columns:1fr}.hero-art{min-height:230px}.section{padding:46px 0}.timeline{grid-template-columns:repeat(2,1fr)}.flight-list{grid-template-columns:1fr}.destination-grid{grid-template-columns:1fr}.destination{min-height:0}.section-head{align-items:start;flex-direction:column}.place-row{grid-template-columns:68px 1fr}.place-row .cost{grid-column:2;text-align:left}.target-grid{grid-template-columns:repeat(2,1fr)}}
+@media(max-width:520px){.wrap{width:min(100% - 28px,1120px)}.nav{height:58px}.brand{font-size:15px}.brand small{display:none}.navlinks{font-size:10px;gap:12px}.hero h1{font-size:43px}.hero-sub{font-size:15px}.meta span{font-size:10px}.hero-art{min-height:190px}.timeline{grid-template-columns:1fr}.stats{grid-template-columns:1fr 1fr}.stays{grid-template-columns:repeat(2,1fr)}.route-line{gap:5px}.route-node{min-width:76px}.route-node b{font-size:11px}.route-arrow{font-size:13px}.card{padding:18px}.budget-hero{grid-template-columns:1fr 1fr}.budget-number{padding:17px}.budget-number strong{font-size:32px}.budget-table th,.budget-table td{padding:10px 8px;font-size:11px}.footer{display:block}.footer a{display:inline-block;margin-top:14px}}
+@media print{.topbar{position:static}.navlinks{display:none}.section{break-inside:avoid}.card,.hero-art{box-shadow:none}body{background:#fff}}
+</style>
+</head>
+<body>
+<header class="topbar"><div class="wrap nav"><a class="brand" href="#top">SOUTHBOUND <small>TRAVEL JOURNAL · 2027</small></a><nav class="navlinks"><a href="#overview">总览</a><a href="#visa">签证</a><a href="#flights">航班</a><a href="#melbourne">墨尔本</a><a href="#new-zealand">新西兰</a><a href="#budget">预算</a></nav></div></header>
+<main id="top">
+<section class="hero"><div class="wrap hero-grid">
+<div><div class="eyebrow">AUSTRALIA × AOTEAROA NEW ZEALAND</div><h1>南半球，<em>慢慢走。</em></h1><p class="hero-sub">墨尔本的海岸线，皇后镇的风，凯库拉的鲸，与北岛山谷里的萤火。</p><div class="meta"><span>2027.09.30 — 10.09</span><span>8晚 · 9天</span><span>双人同行</span><span>公共交通 / 跟团</span></div><div class="hero-note">一趟不自驾的小旅行 · Beijing ⇄ Southern Hemisphere</div></div>
+<div class="hero-art" aria-label="手绘风山海与旅程线稿"><svg viewBox="0 0 520 330" role="img" aria-hidden="true">
+<path d="M28 251 C86 225 108 249 158 226 S240 230 286 205 S370 207 492 165" fill="none" stroke="#9ab0a0" stroke-width="2" stroke-dasharray="5 8"/>
+<path d="M40 252 C95 220 131 234 167 212 C202 192 232 206 269 177 C309 145 359 168 401 130" fill="none" stroke="#557568" stroke-width="1.5"/>
+<path d="M68 220 L116 164 L151 203 L194 119 L246 192 L287 143 L344 198 L390 149 L448 207" fill="none" stroke="#557568" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"/>
+<path d="M116 164 L127 178 L138 164 M194 119 L207 143 L220 129 M287 143 L300 163 L312 149" fill="none" stroke="#c9826d" stroke-width="1.5"/>
+<path d="M0 271 Q72 248 143 269 T286 267 T520 251 L520 330 L0 330Z" fill="#c8d8cc" opacity=".65"/>
+<path d="M0 286 Q78 269 154 285 T310 282 T520 270" fill="none" stroke="#7d9b8b" stroke-width="2"/>
+<path d="M365 72 C379 47 410 41 429 59 C448 78 439 103 418 113 C395 125 367 109 365 88" fill="none" stroke="#c9826d" stroke-width="2"/>
+<path d="M394 49 Q398 28 415 19 M417 52 Q434 36 450 40" fill="none" stroke="#c9826d" stroke-width="2" stroke-linecap="round"/>
+<path d="M80 96 Q93 78 106 96 L111 115 Q94 128 78 115Z" fill="none" stroke="#557568" stroke-width="2"/>
+<circle cx="86" cy="105" r="3" fill="#557568"/><circle cx="103" cy="105" r="3" fill="#557568"/>
+<path d="M88 117 Q96 124 103 117" fill="none" stroke="#557568" stroke-width="1.5"/>
+<path d="M256 78 q10 -10 20 0 q10 10 20 0" fill="none" stroke="#c5a15f" stroke-width="2" stroke-linecap="round"/>
+<path d="M267 70 l-4 -7 M279 70 l4 -7" stroke="#c5a15f" stroke-width="1.5"/>
+<circle cx="325" cy="77" r="3" fill="#c9826d"/><circle cx="339" cy="67" r="2" fill="#c9826d"/><circle cx="350" cy="82" r="2.5" fill="#c9826d"/>
+<text x="45" y="302" fill="#536e60" font-size="10" letter-spacing="2">MELBOURNE</text><text x="198" y="302" fill="#536e60" font-size="10" letter-spacing="2">QUEENSTOWN</text><text x="390" y="302" fill="#536e60" font-size="10" letter-spacing="2">AOTEAROA</text>
+</svg><div class="art-caption">little moments, long coastlines</div></div>
+</div></section>
+<section class="section" id="overview"><div class="wrap">
+<div class="section-head"><div><div class="kicker">01 · AT A GLANCE</div><h2>一页看懂这趟旅程</h2></div><p>先落地墨尔本，再飞新西兰南岛，最后从奥克兰回北京。城市停留和转场顺序一目了然。</p></div>
+<div class="overview-grid">
+<div class="card route-card"><div class="kicker">THE ROUTE</div><h3>北京 → 墨尔本 → 皇后镇 → 凯库拉 → 奥克兰 → 北京</h3><div class="route-line">
+<div class="route-node"><b>北京</b><small>PEK</small></div><span class="route-arrow">→</span><div class="route-node"><b>墨尔本</b><small>MEL · 2晚</small></div><span class="route-arrow">→</span><div class="route-node"><b>皇后镇</b><small>ZQN · 2晚</small></div><span class="route-arrow">→</span><div class="route-node"><b>凯库拉</b><small>地面交通 · 2晚</small></div><span class="route-arrow">→</span><div class="route-node"><b>奥克兰</b><small>AKL · 2晚</small></div><span class="route-arrow">→</span><div class="route-node"><b>北京</b><small>PEK</small></div>
+</div><div class="stays"><div class="stay"><b>Melbourne</b><small>城市＋大洋路</small><div class="nights">2 NIGHTS</div></div><div class="stay"><b>Queenstown</b><small>跳伞＋峡谷快艇</small><div class="nights">2 NIGHTS</div></div><div class="stay"><b>Kaikōura</b><small>观鲸＋半岛步道</small><div class="nights">2 NIGHTS</div></div><div class="stay"><b>Auckland</b><small>霍比特人＋萤火虫洞</small><div class="nights">2 NIGHTS</div></div></div><p class="overview-note">9月30日北京夜间出发；10月9日 11:00 从奥克兰飞回北京。10月5日、10月7日为转场日，优先选择早去晚回的交通组合，具体班次待核。</p></div>
+<div class="stats"><div class="stat"><strong>8 晚</strong><span>四个住宿城市，各2晚</span></div><div class="stat"><strong>9 天</strong><span>2027.09.30 — 10.09</span></div><div class="stat"><strong>2 人</strong><span>中国护照 · 双人预算</span></div><div class="stat"><strong>0 自驾</strong><span>航班、巴士、跟团接驳</span></div></div>
+</div>
+<div style="height:18px"></div>
+<div class="timeline">
+<div class="card day"><div class="date">DAY 01 · 09/30</div><h3>北京夜航</h3><p>从北京出发，跨夜飞往墨尔本。</p><div class="overnight">✈ 夜宿飞机</div></div>
+<div class="card day"><div class="date">DAY 02 · 10/01</div><h3>抵达墨尔本</h3><p>入住或寄存行李，CBD 慢慢散步。</p><div class="overnight">⌂ 墨尔本</div></div>
+<div class="card day"><div class="date">DAY 03 · 10/02</div><h3>大洋路一日游</h3><p>十二门徒岩、Loch Ard Gorge、沿海观景。</p><div class="overnight">⌂ 墨尔本</div></div>
+<div class="card day"><div class="date">DAY 04 · 10/03</div><h3>飞往皇后镇</h3><p>MEL → ZQN，湖边散步，早点休息。</p><div class="overnight">⌂ 皇后镇</div></div>
+<div class="card day"><div class="date">DAY 05 · 10/04</div><h3>皇后镇冒险日</h3><p>12,000英尺跳伞＋Shotover Jet。</p><div class="overnight">⌂ 皇后镇</div></div>
+<div class="card day"><div class="date">DAY 06 · 10/05</div><h3>转场去凯库拉</h3><p>ZQN → CHC，再乘巴士 / 火车前往凯库拉。</p><div class="overnight">⌂ 凯库拉</div></div>
+<div class="card day"><div class="date">DAY 07 · 10/06</div><h3>凯库拉观鲸</h3><p>上午观鲸，下午半岛步道与海豹栖息地。</p><div class="overnight">⌂ 凯库拉</div></div>
+<div class="card day"><div class="date">DAY 08 · 10/07</div><h3>转场去奥克兰</h3><p>凯库拉 → CHC，再飞往 AKL；优先选晚些的航班。</p><div class="overnight">⌂ 奥克兰</div></div>
+<div class="card day"><div class="date">DAY 09 · 10/08—10/09</div><h3>北岛一日游 · 回北京</h3><p>10/08 霍比特人村中文团＋Waitomo；10/09 11:00 飞北京。</p><div class="overnight">⌂ 奥克兰 1晚 · 次日返程</div></div>
+</div>
+</div></section>
+<section class="section" id="visa"><div class="wrap">
+<div class="section-head"><div><div class="kicker">02 · ENTRY & VISA</div><h2>签证方案与申请流程</h2></div><p>先申请澳大利亚600访客签证，再根据从澳大利亚直接飞往新西兰的行程申请NZeTA。两位旅客分别申请。</p></div>
+<div class="flow-grid">
+<div class="card flow-card"><div class="flow-title"><h3>🇦🇺 澳大利亚 Visitor 600</h3><span class="tag">主申请</span></div><div class="small" style="margin-bottom:14px">境外申请 · Tourist stream · 目标：三年多次往返</div>
+<div class="steps">
+<div class="step"><span class="step-num">1</span><div><b>整理申请材料</b><p>护照及旧护照、既往出入境记录、在职与准假证明、收入证明、银行流水、资产材料、旅行计划及住宿安排。</p></div></div><div class="flow-down">↓</div>
+<div class="step"><span class="step-num">2</span><div><b>通过 ImmiAccount 在线递交</b><p>每位申请人单独提交。申请中如实提出希望获批3年、多次入境，并说明真实的未来赴澳旅游计划。</p></div></div><div class="flow-down">↓</div>
+<div class="step"><span class="step-num">3</span><div><b>等待审理 · 以批签信为准</b><p>签证期限、每次停留期和入境次数由内政部个案决定；提出三年多次申请不等于保证获批。</p></div></div><div class="flow-down">↓</div>
+<div class="step"><span class="step-num">4</span><div><b>收到签证后核对 VEVO</b><p>重点确认有效期、Multiple entry travel facility、停留期限及附加条件，确保10月3日飞新西兰时仍有效。</p></div></div>
+</div><div class="callout"><strong>费用参考：</strong>境外600 Tourist stream当前起价 AUD 250 / 人；两人约 AUD 500。2027年递交时以官方收费为准。<br><a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600/tourist-stream-overseas" target="_blank" rel="noreferrer">澳大利亚内政部 · 600 Tourist stream ↗</a></div></div>
+<div class="card flow-card"><div class="flow-title"><h3>🇳🇿 新西兰 NZeTA</h3><span class="tag coral">后申请</span></div><div class="small" style="margin-bottom:14px">中国护照 + 合资格澳大利亚签证 + 从澳大利亚直飞新西兰</div>
+<div class="steps">
+<div class="step"><span class="step-num">1</span><div><b>持有合资格澳大利亚签证</b><p>新西兰移民局列明 Visitor visa subclass 600 属于合资格签证；赴新值机时须仍有效。</p></div></div><div class="flow-down">↓</div>
+<div class="step"><span class="step-num">2</span><div><b>已实际入境澳大利亚</b><p>须在澳大利亚完成入境手续，再从澳大利亚机场直接搭乘航班前往新西兰；仅在澳洲转机不符合条件。</p></div></div><div class="flow-down">↓</div>
+<div class="step"><span class="step-num">3</span><div><b>申请 NZeTA 并缴纳 IVL</b><p>官方手机App NZD 17 / 人；官网 NZD 23 / 人；另缴 IVL NZD 100 / 人。建议至少提前72小时申请。</p></div></div><div class="flow-down">↓</div>
+<div class="step"><span class="step-num">4</span><div><b>从墨尔本飞皇后镇</b><p>抵达后仍须满足健康、品格及真实访客等入境要求；获准入境时由边境签发访客签证。</p></div></div>
+</div><div class="callout"><strong>政策状态（2026年10月更新）：</strong>符合条件的中国旅客可继续使用该便利安排，直至另行通知；初始试行期结束后仍将评估。2027年出发前必须复核政策是否继续。<br><a href="https://www.immigration.govt.nz/visit/what-you-need-to-visit-new-zealand/chinese-and-pacific-island-visitors-travelling-from-australia/" target="_blank" rel="noreferrer">新西兰移民局 · 从澳大利亚赴新西兰 ↗</a></div></div>
+</div>
+</div></section>
+<section class="section" id="flights"><div class="wrap">
+<div class="section-head"><div><div class="kicker">03 · FLIGHT PLAN</div><h2>航线与交通怎么衔接</h2></div><p>国际段采用开口程，南岛通过基督城衔接凯库拉。以下为规划路线和预算区间，并非已出票航班。</p></div>
+<div class="flight-map"><svg viewBox="0 0 900 250" role="img" aria-label="北京、墨尔本、皇后镇、基督城、凯库拉、奥克兰航线示意">
+<path d="M72 132 C140 30 252 35 325 112 C365 155 337 196 269 204 C184 217 92 197 72 132Z" fill="#d6dfcf" stroke="#789283" stroke-width="2"/>
+<path d="M598 55 C620 74 637 100 629 126 C620 153 601 170 587 191 C573 210 554 216 548 194 C542 170 566 147 574 121 C582 95 579 69 598 55Z" fill="#d6dfcf" stroke="#789283" stroke-width="2"/>
+<path d="M637 156 C654 170 665 190 657 210 C650 226 636 234 628 218 C622 202 632 177 637 156Z" fill="#d6dfcf" stroke="#789283" stroke-width="2"/>
+<path d="M48 75 Q225 -8 379 83" fill="none" stroke="#c9826d" stroke-width="2" stroke-dasharray="6 7"/>
+<path d="M379 83 Q460 116 558 164" fill="none" stroke="#c9826d" stroke-width="2" stroke-dasharray="6 7"/>
+<path d="M558 164 Q646 93 726 85" fill="none" stroke="#557568" stroke-width="2" stroke-dasharray="5 6"/>
+<path d="M726 85 Q810 65 854 114" fill="none" stroke="#c9826d" stroke-width="2" stroke-dasharray="6 7"/>
+<g fill="#fffdf8" stroke="#557568" stroke-width="2"><circle cx="48" cy="75" r="6"/><circle cx="379" cy="83" r="6"/><circle cx="558" cy="164" r="6"/><circle cx="637" cy="156" r="6"/><circle cx="726" cy="85" r="6"/><circle cx="854" cy="114" r="6"/></g>
+<g class="flight-label"><text x="22" y="56">BEIJING</text><text x="342" y="62">MELBOURNE</text><text x="518" y="190">QUEENSTOWN</text><text x="600" y="139">CHRISTCHURCH</text><text x="651" y="229">KAIKŌURA</text><text x="699" y="63">AUCKLAND</text><text x="817" y="139">BEIJING</text></g>
+<g class="flight-sub"><text x="20" y="91">PEK</text><text x="356" y="99">MEL</text><text x="529" y="208">ZQN</text><text x="611" y="123">CHC</text><text x="641" y="244">地面交通</text><text x="711" y="101">AKL</text><text x="832" y="155">PEK</text></g>
+<path d="M570 168 Q594 139 622 153" fill="none" stroke="#c5a15f" stroke-width="2" stroke-dasharray="3 5"/>
+<text x="592" y="183" class="flight-sub">巴士 / 火车</text>
+</svg><div class="small">航线示意图仅表达路线关系，不按地理比例绘制；凯库拉无机场，需经基督城转乘地面交通。</div></div>
+<div class="flight-list">
+<div class="card flight-leg"><div class="airport"><div><div class="airport-code">PEK</div><div class="airport-name">北京首都</div></div><span class="leg-arrow">→</span><div><div class="airport-code">MEL</div><div class="airport-name">墨尔本</div></div></div><p class="small">9/30 夜间出发 · 10/1 抵达。返程由 AKL 回 PEK，采用开口程。</p><div class="price">¥13,000–14,000 <small>/ 双人往返开口程参考</small></div></div>
+<div class="card flight-leg"><div class="airport"><div><div class="airport-code">MEL</div><div class="airport-name">墨尔本</div></div><span class="leg-arrow">→</span><div><div class="airport-code">ZQN</div><div class="airport-name">皇后镇</div></div></div><p class="small">10/3 · 优先直飞；如需中转，尽量同一订单并确认行李直挂。</p><div class="price">¥4,600–5,000 <small>/ 双人参考</small></div></div>
+<div class="card flight-leg"><div class="airport"><div><div class="airport-code">ZQN</div><div class="airport-name">皇后镇</div></div><span class="leg-arrow">→</span><div><div class="airport-code">CHC</div><div class="airport-name">基督城</div></div></div><p class="small">10/5 尽量早班；到达后转乘巴士 / 火车前往凯库拉。</p><div class="price">待比价 <small>/ 区域机票预算中预留</small></div></div>
+<div class="card flight-leg"><div class="airport"><div><div class="airport-code">CHC</div><div class="airport-name">基督城</div></div><span class="leg-arrow">⇄</span><div><div class="airport-code">KAI</div><div class="airport-name">凯库拉（地面）</div></div></div><p class="small">10/5 前往、10/7 返回；巴士 / 火车按当季班次确认。</p><div class="price">待比价 <small>/ 双人地面交通预算另计</small></div></div>
+<div class="card flight-leg"><div class="airport"><div><div class="airport-code">CHC</div><div class="airport-name">基督城</div></div><span class="leg-arrow">→</span><div><div class="airport-code">AKL</div><div class="airport-name">奥克兰</div></div></div><p class="small">10/7 · 先确认凯库拉回程，再购买较晚的航班，避免紧凑衔接。</p><div class="price">待比价 <small>/ 区域机票预算中预留</small></div></div>
+<div class="card flight-leg"><div class="airport"><div><div class="airport-code">AKL</div><div class="airport-name">奥克兰</div></div><span class="leg-arrow">→</span><div><div class="airport-code">PEK</div><div class="airport-name">北京</div></div></div><p class="small">10/9 上午 11:00 起飞；已包含在国际开口程预算中。</p><div class="price">已计入开口程 <small>/ 具体航班待出票</small></div></div>
+</div>
+<div class="callout"><strong>转场日优化重点：</strong>10/5 早班 ZQN → CHC，落地后再去凯库拉；10/7 先乘早班地面交通回 CHC，再选择较晚的 CHC → AKL。不要在航班未确定前购买衔接时间过短的分开出票组合。南岛区域机票合计预算（含 MEL→ZQN、ZQN→CHC、CHC→AKL）约 ¥6,000–8,000 / 双人。</div>
+</div></section>
+<section class="section" id="melbourne"><div class="wrap">
+<div class="section-head"><div><div class="kicker">04 · MELBOURNE</div><h2>墨尔本 · 城市与海岸</h2></div><p>住在CBD，第一天轻松适应时差，第二天把完整的一天交给大洋路。</p></div>
+<div class="split">
+<div class="illustration-panel"><div><span class="tag">2 NIGHTS · 10/01—10/03</span><h3 style="font:24px var(--serif);margin:12px 0 4px">从城市走向海</h3><p class="small">Flinders Street · Twelve Apostles · Loch Ard Gorge</p></div><svg viewBox="0 0 360 170" role="img" aria-label="海岸线和十二门徒岩手绘线稿"><path d="M10 128 Q70 103 118 123 T222 113 T350 100" fill="none" stroke="#557568" stroke-width="2"/><path d="M38 130 L50 84 L65 130 M105 122 L122 60 L141 123 M183 117 L202 75 L220 117" fill="none" stroke="#c9826d" stroke-width="2" stroke-linecap="round"/><path d="M0 144 Q90 131 170 145 T360 135 L360 170 L0 170Z" fill="#c7d9d0"/><path d="M12 148 Q75 139 137 150 T270 145 T360 147" fill="none" stroke="#789a8c" stroke-width="1.5"/><path d="M245 78 Q260 57 275 78 M275 78 Q291 48 308 78" fill="none" stroke="#557568" stroke-width="2"/><circle cx="290" cy="35" r="15" fill="none" stroke="#c5a15f" stroke-width="1.5"/></svg><div class="small">沿海一日团建议选择CBD接送，并确认包含十二门徒岩及Loch Ard Gorge。</div></div>
+<div class="card"><div class="place-list">
+<div class="place-row"><time>10/01<br>抵达日</time><div><b>CBD 慢慢逛</b><p>Flinders Street Station → Federation Square → Hosier Lane → Yarra River / Southbank。入住或寄存行李，晚上早点休息。</p></div><div class="cost">轻松半日</div></div>
+<div class="place-row"><time>10/02<br>全天</time><div><b>Great Ocean Road 大洋路</b><p>Torquay、Lorne / Apollo Bay、Great Otway、十二门徒岩、Loch Ard Gorge；根据团型和天气调整停靠。</p></div><div class="cost">约12–13小时</div></div>
+</div><div class="callout"><strong>双人预算参考：</strong>CBD住宿2晚 ¥1,800–2,200；大洋路一日团 ¥800–1,200。建议选评价稳定、集合点清楚的团，穿防滑鞋并带外套。<br><a href="https://www.visitvictoria.com/regions/great-ocean-road" target="_blank" rel="noreferrer">Visit Victoria · Great Ocean Road ↗</a></div></div>
+</div>
+</div></section>
+<section class="section" id="new-zealand"><div class="wrap">
+<div class="section-head"><div><div class="kicker">05 · NEW ZEALAND</div><h2>新西兰 · 三站慢游</h2></div><p>南岛只保留皇后镇与凯库拉，最后到奥克兰参加北岛主题一日游；不加入蒂阿瑙、米尔福德峡湾或Skyline Luge。</p></div>
+<div class="destination-grid">
+<article class="card destination"><div class="city-no">01 / SOUTH ISLAND</div><h3>Queenstown 皇后镇</h3><div class="stayline">10/03—10/05 · 2晚</div><span class="tag">冒险体验</span><ul><li><b>10/03：</b>墨尔本飞抵皇后镇，湖边散步、休息。</li><li><b>10/04：</b>NZONE 12,000英尺双人跳伞；安排 Shotover Jet 峡谷喷射快艇。</li><li>跳伞尽量预约上午；天气取消后本次没有额外补跳日。</li></ul><div class="dest-price">双人住宿预算<strong>¥2,000–2,600 / 2晚</strong>项目参考：跳伞 NZD 469 / 人；Shotover Jet NZD 159 / 人。双人跳伞人民币预算约 ¥3,500–4,500，快艇约 ¥1,600–1,900。</div><div class="note">需确认天气取消政策；保险须明确承保跳伞及喷射快艇。</div><div class="small" style="margin-top:10px"><a href="https://www.nzoneskydive.co.nz/prices-deals/" target="_blank">NZONE ↗</a>　<a href="https://shotoverjet.com/things-to-do/" target="_blank">Shotover Jet ↗</a></div></article>
+<article class="card destination"><div class="city-no">02 / SOUTH ISLAND</div><h3>Kaikōura 凯库拉</h3><div class="stayline">10/05—10/07 · 2晚</div><span class="tag coral">海洋野生动物</span><ul><li><b>10/05：</b>皇后镇飞基督城，再乘巴士 / 火车前往凯库拉。</li><li><b>10/06上午：</b>Whale Watch Kaikōura 观鲸，预留约3.5小时。</li><li><b>10/06下午：</b>Kaikōura Peninsula Walkway、Point Kean海豹栖息地；可按体力走部分步道。</li><li><b>10/07：</b>返回基督城，再飞奥克兰。</li></ul><div class="dest-price">双人住宿预算<strong>¥1,600–2,200 / 2晚</strong>观鲸现行公布价 NZD 185 / 人（适用至2027/09/30）；10/06票价待运营商更新。</div><div class="note">观鲸受海况影响，野生动物目击不保证；10/07离开，补救空间有限。</div><div class="small" style="margin-top:10px"><a href="https://whalewatch.co.nz/" target="_blank">Whale Watch Kaikōura ↗</a>　<a href="https://www.kaikoura.co.nz/" target="_blank">Kaikōura 官方旅游信息 ↗</a></div></article>
+<article class="card destination"><div class="city-no">03 / NORTH ISLAND</div><h3>Auckland 奥克兰</h3><div class="stayline">10/07—10/09 · 2晚</div><span class="tag gold">电影场景与萤火虫</span><ul><li><b>10/07：</b>抵达奥克兰，入住，晚餐及休息。</li><li><b>10/08：</b>参加北岛主题一日游：霍比特人村中文导览＋Waitomo Glowworm Caves。</li><li><b>10/09：</b>11:00 AKL → PEK，返回北京。</li></ul><div class="dest-price">双人住宿预算<strong>¥1,600–2,200 / 2晚</strong>霍比特人村 NZD 130 / 人；Waitomo 萤火虫洞 NZD 85 / 人。两景点门票双人合计约 NZD 430，未含交通团费。</div><div class="note">需先确认中文导览、Waitomo下午入洞时段及两地接驳；组合团为优先方案。</div><div class="small" style="margin-top:10px"><a href="https://www.hobbitontours.com/experiences/" target="_blank">Hobbiton ↗</a>　<a href="https://www.waitomo.com/" target="_blank">Waitomo ↗</a></div></article>
+</div>
+<div class="callout"><strong>北岛一日游提示：</strong>霍比特人村与Waitomo从奥克兰往返是长距离、高强度行程。建议预订同一运营商的组合团，不自行拼接多段公共交通；中文团场次和洞穴入场时段以2027年10月8日可订信息为准。</div>
+</div></section>
+<section class="section" id="budget"><div class="wrap">
+<div class="section-head"><div><div class="kicker">06 · TWO-PERSON BUDGET</div><h2>双人预算 · 把握4万元目标</h2></div><p>当前按双人估算，机票和北岛组合团仍有待最终比价。预算目标与上限是控制线，不是已锁定报价。</p></div>
+<div class="budget-hero"><div class="budget-number"><span>PLANNING TARGET · 目标预算</span><strong>¥40,000</strong><small>希望通过早订机票、控制住宿及组合团价格实现</small></div><div class="budget-number alt"><span>HARD CAP · 费用上限</span><strong>¥42,000</strong><small>预留约 ¥2,000 机动空间，不建议突破</small></div></div>
+<div class="card"><table class="budget-table"><thead><tr><th>费用类别</th><th>双人估算区间</th><th>控制目标</th></tr></thead><tbody>
+<tr><td>国际开口程机票（PEK–MEL / AKL–PEK）</td><td>¥13,000–14,000</td><td>¥13,000</td></tr>
+<tr><td>澳新区域机票（MEL–ZQN–CHC–AKL）</td><td>¥6,000–8,000</td><td>¥6,000</td></tr>
+<tr><td>澳大利亚600签证＋NZeTA / IVL</td><td>¥2,800–3,600</td><td>¥2,800</td></tr>
+<tr><td>住宿（8晚）</td><td>¥7,000–8,800</td><td>¥7,000</td></tr>
+<tr><td>活动项目（大洋路、跳伞、快艇、观鲸、霍比特人、Waitomo）</td><td>¥7,000–8,800</td><td>¥7,000</td></tr>
+<tr><td>地面交通（机场、基督城—凯库拉往返、北岛团接送）</td><td>¥1,500–2,500</td><td>¥1,500</td></tr>
+<tr><td>餐饮</td><td>¥1,600–2,000</td><td>¥2,000</td></tr>
+<tr><td>旅行保险及杂费</td><td>¥600–900</td><td>¥700</td></tr>
+<tr><td><strong>合计</strong></td><td><strong>约 ¥39,500–48,600</strong></td><td><strong>¥40,000</strong></td></tr>
+</tbody></table></div>
+<div class="target-grid"><div class="target-item"><span>国际机票</span><b>¥13,000</b></div><div class="target-item"><span>区域机票</span><b>¥6,000</b></div><div class="target-item"><span>签证与入境</span><b>¥2,800</b></div><div class="target-item"><span>住宿</span><b>¥7,000</b></div><div class="target-item"><span>活动</span><b>¥7,000</b></div><div class="target-item"><span>地面交通</span><b>¥1,500</b></div><div class="target-item"><span>餐饮</span><b>¥2,000</b></div><div class="target-item"><span>保险杂费</span><b>¥700</b></div></div>
+<div class="callout"><strong>预算判断：</strong>目前区间上沿明显超过 ¥42,000，因此4万元目标需要各主要项目接近低位成交；若报价逼近上限，优先压缩机票、住宿和北岛组合团成本，不要压缩转场缓冲。跳伞影像套餐不默认计入。保险需确认覆盖高空跳伞及喷射快艇。</div>
+</div></section>
+<section class="section" id="booking"><div class="wrap">
+<div class="section-head"><div><div class="kicker">BEFORE BOOKING</div><h2>预订顺序与待确认事项</h2></div><p>先锁定影响后续衔接的项目，再安排可调整的细节。</p></div>
+<div class="overview-grid">
+<div class="card"><h3>优先确认</h3><div class="place-list">
+<div class="place-row"><time>01</time><div><b>澳大利亚600签证</b><p>每人单独递交；批签后核对多次入境及有效期。</p></div></div>
+<div class="place-row"><time>02</time><div><b>国际开口程＋MEL → ZQN</b><p>核对行李、退改和中转；避免跨机场转机。</p></div></div>
+<div class="place-row"><time>03</time><div><b>ZQN → CHC、CHC—凯库拉往返、CHC → AKL</b><p>先确认完整地面班次，再买10/5、10/7两段衔接机票。</p></div></div>
+<div class="place-row"><time>04</time><div><b>10/06 凯库拉观鲸</b><p>确认海况取消、改期与退款政策。</p></div></div>
+<div class="place-row"><time>05</time><div><b>10/08 霍比特人中文团＋Waitomo</b><p>确认中文场次、洞穴入场时段和组合接送。</p></div></div>
+<div class="place-row"><time>06</time><div><b>8晚住宿与旅行保险</b><p>优先可取消房价；保险明确覆盖跳伞及喷射快艇。</p></div></div>
+</div></div>
+<div class="card"><h3>官方预订入口</h3><p class="small">政策、班次、票价和活动安排以官方最新信息为准。</p><div class="links">
+<a href="https://immi.homeaffairs.gov.au/visas/getting-a-visa/visa-listing/visitor-600/tourist-stream-overseas" target="_blank" rel="noreferrer">澳大利亚600签证</a>
+<a href="https://nzeta.immigration.govt.nz/" target="_blank" rel="noreferrer">NZeTA申请</a>
+<a href="https://www.immigration.govt.nz/visit/what-you-need-to-visit-new-zealand/chinese-and-pacific-island-visitors-travelling-from-australia/" target="_blank" rel="noreferrer">新西兰赴新政策</a>
+<a href="https://www.nzoneskydive.co.nz/" target="_blank" rel="noreferrer">NZONE跳伞</a>
+<a href="https://shotoverjet.com/" target="_blank" rel="noreferrer">Shotover Jet</a>
+<a href="https://whalewatch.co.nz/" target="_blank" rel="noreferrer">凯库拉观鲸</a>
+<a href="https://www.hobbitontours.com/" target="_blank" rel="noreferrer">霍比特人村</a>
+<a href="https://www.waitomo.com/" target="_blank" rel="noreferrer">Waitomo萤火虫洞</a>
+<a href="https://www.intercity.co.nz/" target="_blank" rel="noreferrer">InterCity巴士</a>
+<a href="https://www.greatjourneysnz.com/" target="_blank" rel="noreferrer">新西兰观光铁路</a>
+</div><div class="callout"><strong>价格口径：</strong>人民币预算为规划估算；新西兰景点票价以官网当前公布价为参照，2027年10月可能调整。未锁定的航班、巴士、火车和中文团均标为待确认。</div></div>
+</div>
+</div></section>
+</main>
+<footer class="wrap footer"><div><b>南半球，慢慢走。</b><p>2027.09.30—10.09 · 澳大利亚 × 新西兰 · 双人旅行规划<br>本页面为行程规划及预算估算，不保证签证获批、野生动物目击或活动因天气正常运营。所有政策、班次、价格及入境要求须在预订和出发前再次核实。</p></div><a href="#top">回到顶部 ↑</a></footer>
+</body>
+</html>
