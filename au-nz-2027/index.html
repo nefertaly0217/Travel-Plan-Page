@@ -19,6 +19,15 @@ a{color:inherit;text-decoration:none}a:hover{color:var(--coral)}.wrap{width:min(
 .overview-grid{display:grid;grid-template-columns:1.25fr .75fr;gap:18px}.route-card{padding:24px;position:relative;overflow:hidden}.route-line{display:flex;align-items:center;gap:8px;flex-wrap:wrap;margin:22px 0 18px}.route-node{min-width:92px;text-align:center}.route-node b{display:block;font-size:13px}.route-node small{font-size:10px;color:var(--muted);letter-spacing:.08em}.route-arrow{color:var(--coral);font-size:17px}.stays{display:grid;grid-template-columns:repeat(4,1fr);gap:9px}.stay{background:#f4f0e6;border-radius:12px;padding:13px 10px;text-align:center}.stay b{display:block;font:16px var(--serif)}.stay small{display:block;color:var(--muted);font-size:10px;margin-top:3px}.stay .nights{font-size:11px;color:var(--pine);font-weight:700;margin-top:7px}
 .overview-note{font-size:12px;color:var(--muted);border-left:2px solid var(--ochre);padding-left:12px;margin:17px 0 0}.stats{display:grid;grid-template-columns:1fr 1fr;gap:10px}.stat{background:var(--pine2);border-radius:14px;padding:17px}.stat:nth-child(2){background:var(--coral2)}.stat strong{display:block;font:26px var(--serif)}.stat span{font-size:11px;color:var(--muted)}
 .timeline{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.day{position:relative;padding:18px 18px 17px 21px;min-height:144px}.day:before{content:"";position:absolute;left:0;top:18px;bottom:18px;border-left:2px solid var(--pine2)}.day .date{font-size:10px;letter-spacing:.14em;color:var(--coral);font-weight:700}.day h3{font:17px var(--serif);margin:6px 0}.day p{font-size:12px;color:var(--muted);margin:0}.day .overnight{font-size:10px;color:var(--pine);margin-top:10px}
+.itinerary-table-wrap{margin-top:22px;overflow-x:auto;border:1px solid var(--line);border-radius:16px;background:rgba(255,253,248,.82);box-shadow:0 8px 28px rgba(55,65,53,.035)}
+.itinerary-table{width:100%;min-width:900px;border-collapse:collapse;font-size:12px}
+.itinerary-table th,.itinerary-table td{padding:14px 13px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.itinerary-table th{background:#f0eee4;color:var(--muted);font-size:10px;letter-spacing:.08em;font-weight:700;white-space:nowrap}
+.itinerary-table td:first-child{font-weight:700;color:var(--pine);white-space:nowrap}
+.itinerary-table td:nth-child(2){white-space:nowrap;color:#8b6a4e}
+.itinerary-table td:last-child{white-space:nowrap}
+.itinerary-table tr:last-child td{border-bottom:0}
+.itinerary-table .table-note{color:var(--muted);font-size:11px}
 .flow-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}.flow-card{padding:25px}.flow-card .flow-title{display:flex;justify-content:space-between;align-items:center;margin-bottom:17px}.flow-card h3{margin:0;font:21px var(--serif)}.steps{display:grid;gap:9px}.step{display:grid;grid-template-columns:30px 1fr;gap:11px;align-items:start;padding:12px;background:#f7f4eb;border-radius:12px}.step-num{width:26px;height:26px;border:1px solid var(--pine);border-radius:50%;display:grid;place-items:center;color:var(--pine);font-size:11px;font-weight:700}.step b{display:block;font-size:13px;margin-bottom:2px}.step p{font-size:11px;color:var(--muted);margin:0}.flow-down{text-align:center;color:var(--coral);font-size:15px;line-height:1}
 .callout{margin-top:17px;padding:15px 17px;border:1px dashed #c7bca7;border-radius:13px;background:#fbf8f0;font-size:12px;color:#596a60}.callout strong{color:var(--ink)}
 .flight-map{padding:22px 24px 18px;margin-bottom:18px;background:linear-gradient(135deg,#edf0e7,#f6eee2);border-radius:20px;border:1px solid var(--line);overflow:hidden}.flight-map svg{width:100%;height:auto;display:block}.flight-label{font-size:11px;fill:#31463e;font-family:var(--sans)}.flight-sub{font-size:9px;fill:#6d7971;font-family:var(--sans)}.flight-list{display:grid;grid-template-columns:repeat(3,1fr);gap:12px}.flight-leg{padding:17px}.airport{display:flex;align-items:center;gap:10px}.airport-code{font:25px Georgia,serif;letter-spacing:.08em}.airport-name{font-size:11px;color:var(--muted)}.leg-arrow{color:var(--coral);margin:5px 0;font-size:12px}.price{font:20px var(--serif);color:var(--pine);margin-top:10px}.price small{font:10px var(--sans);color:var(--muted)}
@@ -75,7 +84,21 @@ a{color:inherit;text-decoration:none}a:hover{color:var(--coral)}.wrap{width:min(
 <div class="card day"><div class="date">DAY 08 · 10/07 THU</div><h3>凯库拉观鲸 → 奥克兰</h3><p>07:15集合，观鲸约3小时15分钟；接驳至基督城机场，再飞奥克兰。</p><div class="overnight">⌂ 奥克兰</div></div>
 <div class="card day"><div class="date">DAY 09 · 10/08 FRI</div><h3>霍比特人村＋萤火虫洞</h3><p>霍比特人村中文团＋Waitomo萤火虫洞；北岛组合跟团约12小时。</p><div class="overnight">⌂ 奥克兰</div></div>
 <div class="card day"><div class="date">DAY 10 · 10/09 SAT</div><h3>奥克兰 → 北京</h3><p>11:00从奥克兰起飞，返回北京。</p><div class="overnight">✈ 返程日</div></div>
-</div>
+</div> 
+<div style="margin-top:28px"><div class="kicker">DAILY ITINERARY</div><h3 style="font:22px var(--serif);margin:7px 0 14px">每日行程表</h3>
+<div class="itinerary-table-wrap"><table class="itinerary-table"><thead><tr><th>日期</th><th>时间</th><th>行程及游玩项目</th><th>交通</th><th>住宿</th></tr></thead><tbody>
+<tr><td>9/30 周四</td><td>夜间</td><td>北京出发，飞往墨尔本</td><td>国际航班</td><td>飞机</td></tr>
+<tr><td>10/1 周五</td><td>上午/下午</td><td>抵达墨尔本；Flinders Street、联邦广场、涂鸦街、雅拉河</td><td>机场至CBD约30–60分钟</td><td>墨尔本</td></tr>
+<tr><td>10/2 周六</td><td>07:00–20:00</td><td>大洋路一日游：沿海公路、十二门徒岩、Loch Ard Gorge</td><td>跟团往返约12–13小时</td><td>墨尔本</td></tr>
+<tr><td>10/3 周日</td><td>上午/下午</td><td>墨尔本飞皇后镇；入住、湖边散步</td><td>飞行约3.5小时，视航班</td><td>皇后镇</td></tr>
+<tr><td>10/4 周一</td><td>上午/下午</td><td>NZONE 12,000英尺跳伞；下午自由活动</td><td>市区集合，运营商接送</td><td>皇后镇</td></tr>
+<tr><td>10/5 周二</td><td>08:00–晚上</td><td>皇后镇→特卡波；<b>Air Safaris 50分钟大穿越</b>；牧羊人教堂、特卡波湖</td><td>巴士约4–4.25小时；当地接驳</td><td>特卡波</td></tr>
+<tr><td>10/6 周三</td><td>上午–晚上</td><td>特卡波→基督城→凯库拉；抵达后入住、海边散步</td><td>巴士约6–8小时，含转乘等待</td><td>凯库拉</td></tr>
+<tr><td>10/7 周四</td><td>07:15–晚上</td><td><b>凯库拉观鲸</b>；返回基督城机场，飞奥克兰</td><td>观鲸约3小时15分钟；接驳约2小时40分钟以上；飞行约1.5小时</td><td>奥克兰</td></tr>
+<tr><td>10/8 周五</td><td>06:00–19:00左右</td><td><b>霍比特人村中文团＋Waitomo萤火虫洞</b></td><td>北岛组合跟团，约12小时</td><td>奥克兰</td></tr>
+<tr><td>10/9 周六</td><td>11:00</td><td>奥克兰飞北京</td><td>国际航班</td><td>—</td></tr>
+</tbody></table></div>
+<p class="small" style="margin:10px 2px 0">注：以上为规划时间；航班、巴士、接驳及活动场次以2027年实际运营和预订确认信息为准。10月5日为唯一计划Air Safaris飞行日，不安排10月6日补飞。</p></div>
 </div>
 </div></section>
 <section class="section" id="visa"><div class="wrap">
